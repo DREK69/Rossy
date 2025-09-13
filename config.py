@@ -30,8 +30,8 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 # Get it from http://dashboard.heroku.com/account
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
-API_URL = getenv("API_URL", 'https://bitflow.in/api/youtube') #youtube song url
-API_KEY = getenv("API_KEY", 'sahilnewkey3210')# youtube song api key, generate free key or buy paid plan from panel.thequickearn.xyz
+API_URL = getenv("API_URL", "https://bitflow.in/api/youtube") #youtube song url
+API_KEY = getenv("API_KEY", "sahilnewkey3210")# youtube song api key, generate free key or buy paid plan from panel.thequickearn.xyz
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
@@ -120,6 +120,7 @@ if SUPPORT_GROUP:
         raise SystemExit(
             "[ERROR] - Your SUPPORT_GROUP url is wrong. Please ensure that it starts with https://"
         )
+
 
 
 
